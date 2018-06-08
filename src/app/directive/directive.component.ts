@@ -12,7 +12,7 @@ export class DirectiveComponent implements OnInit {
   affiche:boolean = true;
 
   formations:Array<Formation>=[];
-  formationAngular:Formation = new Formation("Angular", "nouvelle formation", 1500, new Date(2018, 12, 1), new Date(2018, 12, 30));
+  formationAngular:Formation = new Formation("Angular", 1500, new Date(2018, 12, 1), new Date(2018, 12, 30), "nouvelle formation");
 
   afficheFormation():void{
     this.affiche=!this.affiche;
@@ -47,8 +47,8 @@ export class DirectiveComponent implements OnInit {
     },1000)
     this.formations=[
       this.formationAngular,
-      new Formation('Module TypeScript', 'ts', 1500, new Date(2018, 12, 1), new Date(2018, 12, 30)),
-      new Formation('Module Python', 'py', 1500, new Date(2018, 12, 1), new Date(2018, 12, 30))
+      new Formation('Module TypeScript', 1500, new Date(2018, 12, 1), new Date(2018, 12, 30)),
+      new Formation('Module Python', 1500, new Date(2018, 12, 1), new Date(2018, 12, 30))
     ]
   }
 

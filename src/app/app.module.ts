@@ -6,6 +6,7 @@ import { FormationComponent } from './formation/formation.component';
 import { InterpolateComponent } from './interpolate/interpolate.component';
 import { DirectiveComponent } from './directive/directive.component';
 import { StyleComponent } from './style/style.component';
+import { FormationItemComponent } from './formation-item/formation-item.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { StyleComponent } from './style/style.component';
     FormationComponent,
     InterpolateComponent,
     DirectiveComponent,
-    StyleComponent
+    StyleComponent,
+    FormationItemComponent
   ],
   imports: [
     BrowserModule

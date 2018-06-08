@@ -7,6 +7,8 @@ import { InterpolateComponent } from './interpolate/interpolate.component';
 import { DirectiveComponent } from './directive/directive.component';
 import { StyleComponent } from './style/style.component';
 import { FormationItemComponent } from './formation-item/formation-item.component';
+import { LifecycleComponent } from './lifecycle/lifecycle.component';
+import { LifecycleOnchangeComponent } from './lifecycle-onchange/lifecycle-onchange.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +17,9 @@ import { FormationItemComponent } from './formation-item/formation-item.componen
     InterpolateComponent,
     DirectiveComponent,
     StyleComponent,
-    FormationItemComponent
+    FormationItemComponent,
+    LifecycleComponent,
+    LifecycleOnchangeComponent
   ],
   imports: [
     BrowserModule

@@ -13,6 +13,10 @@ export class StyleComponent implements OnInit {
 
   constructor() { }
 
+  handleFormationSelected(formation) {
+    alert(`${formation.nom}`);
+  }
+
   ngOnInit() {
     this.formations=[
       this.formationAngular,

@@ -6,6 +6,8 @@
 </div>
 <ul>
   <li *ngFor="let formation of formations;index as i;first as f;last as l;even as e">
-    <app-formation-item [formation]="formation" [i]="i" [f]="f" [l]="l" [e]="e"></app-formation-item>
+    <app-formation-item [formation]="formation"
+    [i]="i" [f]="f" [l]="l" [e]="e"
+    (formationSelected)="handleFormationSelected($event)"></app-formation-item>
   </li>
 </ul>

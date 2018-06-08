@@ -1,0 +1,21 @@
+<!-- <div *ngIf="isDisplay">
+  <p>Formation angular</p>
+</div> -->
+<div *ngIf="affiche">
+  <p>{{formationAngular.nom}} {{formationAngular.description}}</p>
+</div>
+<p>
+  <button (click)="afficheFormation()">Affiche/masque la formation</button>
+</p>
+<div [ngSwitch]="formations.length">
+<p *ngSwitchCase="0">Aucune formation disponibles</p>
+<p *ngSwitchCase="1">Une formation disponible : </p>
+<p *ngSwitchDefault>Formations disponibles :</p>
+</div>
+<ul>
+  <li *ngFor="let formation of formations;index as i;first as f;last as l;even as e">
+    <p [style.color]="getColorByElement(f,l)" [style.background]="getBgColorByElement(e)">
+      {{i}} - {{formation.nom}}
+    </p>
+  </li>
+</ul>

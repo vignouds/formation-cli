@@ -1,0 +1,27 @@
+<p>
+  {{getFullName()}}
+</p>
+<p>
+  Object : {{formation.nom}}, {{formation.description}}
+</p>
+<p>
+  Optional : {{formationJS?.nom}}
+</p>
+<p [style.color]="redGreen">
+  Je change de couleur toutes les deux secondes
+</p>
+<p>
+  <button (click)="cacheTxt()">Texte caché</button>
+</p>
+<p [hidden]="isHidden" (mouseover)="mouseOver()" (mouseout)="mouseOut()">
+  Texte caché
+</p>
+<div>
+  <input type="text" #customVariable placeholder="Saisir une valeur">
+  <div>
+    test variable locale : {{customVariable.value}}
+  </div>
+</div>
+<div>
+  <button (click)="customVariable.focus()">Focus the input</button>
+</div>

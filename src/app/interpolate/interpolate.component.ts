@@ -12,7 +12,7 @@ export class InterpolateComponent implements OnInit {
 
   nom:string='Vignoud'
 
-  formation:Formation = new Formation("Java", "formation Diginamic");
+  formation:Formation = new Formation("Java", "formation Diginamic", 1500, new Date(2018, 12, 1), new Date(2018, 12, 30));
 
   formationJS:Formation;
 
@@ -41,7 +41,7 @@ export class InterpolateComponent implements OnInit {
   ngOnInit() {
 
     setTimeout(() => {
-      this.formationJS = new Formation('Module JavaScript', 'desc');
+      this.formationJS = new Formation('Module JavaScript', 'desc', 1500, new Date(2018, 12, 1), new Date(2018, 12, 30));
     }, 3000)
 
     setInterval(() => {

@@ -5,13 +5,15 @@ import { AppComponent } from './app.component';
 import { FormationComponent } from './formation/formation.component';
 import { InterpolateComponent } from './interpolate/interpolate.component';
 import { DirectiveComponent } from './directive/directive.component';
+import { StyleComponent } from './style/style.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FormationComponent,
     InterpolateComponent,
-    DirectiveComponent
+    DirectiveComponent,
+    StyleComponent
   ],
   imports: [
     BrowserModule
